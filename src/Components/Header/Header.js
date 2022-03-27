@@ -4,6 +4,7 @@ export const Header = () => {
 
     return (
         <div className="container-fluid" data-testid="header">
+            {/* Store header */}
             <div className="d-flex justify-content-between">
                 <div>
                     <p>GameStation Store</p>
@@ -12,6 +13,7 @@ export const Header = () => {
                     <i className="fa-solid fa-cart-shopping"></i>
                 </div>
             </div>
+            {/* Game header */}
             <div className=" text-white bg-dark row py-lg-4">
                 {/* <img src="background.jpg" /> */}
                 <div className="">

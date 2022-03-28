@@ -4,6 +4,7 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // components
 import { Header } from '../Components/Header/Header.js';
+import { DLC } from '../Components/DLC/DLC';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           
         </Routes>
         <Header />
+        <DLC />
       </BrowserRouter>
     </div>
   );

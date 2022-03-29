@@ -3,7 +3,7 @@ import React from "react";
 export const Card = ({data}) => {
     return (
         <div className="col" data-testid='card'>
-            <div className="card text-dark">
+            <div className="card text-white bg-dark">
                 <img className="card-img-top" src={data.img} />
                 <div className="card-body">
                     <h4 className="card-title">{data.title}</h4>

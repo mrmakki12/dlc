@@ -10,9 +10,9 @@ export const DLC = () => {
             </div>
             <div>
                 {
-                    dlcs.map(dlc => {
+                    dlcs.map((dlc, i) => {
                         return (
-                            <div>
+                            <div key={i}>
                                 {dlc.name}
                             </div>
                         )

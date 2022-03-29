@@ -3,7 +3,7 @@ export const dlcs = [
     {
         name: 'Hiking Simulator: Washington Winter',
 
-        img: './pictures/washington-winter-woods.jpg',
+        img: '/pictures/washington-winter-woods.jpg',
 
         description: `Take a trip into the calm woods of Washington State, 
         with beautiful and peaceful wild life.`,
@@ -14,7 +14,7 @@ export const dlcs = [
     {
         name: 'Hiking Simulator: Mount Kilimanjaro',
 
-        img: './pictures/kilimanjaro.jpg',
+        img: '/pictures/kilimanjaro.jpg',
 
         description: `Take a long and arduous trip up the tallest mountain in the 
         world. Look out for wildlife, you won't be given help by the locals. Lather your 
@@ -27,7 +27,7 @@ export const dlcs = [
     {
         name: 'Hiking Simulator: The Sahara',
 
-        img: './pictures/shara.jpg',
+        img: '/pictures/sahara.jpg',
 
         description: `Carefully navigate the sand dunes of the Sahara. Pack a ton of water you'll need
         it, we wouldn't want you to experience any hallucinations! Hah ha ha! Over 90% of players haven't
@@ -39,7 +39,7 @@ export const dlcs = [
     {
         name: 'Hiking Simulator: The Nevada Nightmare',
 
-        img: './pictures/nevada-road.jpg',
+        img: '/pictures/nevada-road.jpg',
 
         description: `Your car has broken down, you cellphone is dead and it's National Stay At Home Day, so 
         no one is going to save you. This wasn't a planned hike, so you have no supplies... Will you make it to 
@@ -51,7 +51,7 @@ export const dlcs = [
     {
         name: 'Hiking Simulator: The Moon Landing',
 
-        img: './pictures/space.jpg',
+        img: '/pictures/space.jpg',
 
         description: `The year is 2050 and space trips and now affordable to 25% of the population. Everything goes
         to plan, but when you landed and started exploring you lost your way. Zero gravity is very fun, until you realize
@@ -63,7 +63,7 @@ export const dlcs = [
     {
         name: 'Hiking Simulator: Frozen',
 
-        img: './pictures/winter-wonderland.jpg',
+        img: '/pictures/winter-wonderland.jpg',
 
         description: `You're the stunt double for Elsa in the famous movie "Frozen." A scene goes wrong, what was supposed to 
         be a routine ice slide using your powers turned into an avalanche. You are separated from the whole set and are freezing. 
@@ -75,7 +75,7 @@ export const dlcs = [
     {
         name: 'Hiking Simulator: Tornado',
 
-        img: './pictures/tornado.jpg',
+        img: '/pictures/tornado.jpg',
 
         description: `The Government finally has control over the weather, and they decide to run a severe tornado in your small town.
         You are consumed by the twister, thrown around like a leaf. You survive, what a miracle! But it appears that you nowhere near 
@@ -87,7 +87,7 @@ export const dlcs = [
     {
         name: 'Hiking Simulator: Hurricane Makki',
 
-        img: './pictures/hurricane.jpg',
+        img: '/pictures/hurricane.jpg',
 
         description: `The year is 2012 and the world is ending the way the Aztecs predicted. You are swept up in what became known as 
         Hurricane Makki. After being thrashed around for twelve hours the notorious hurricane cools off. Can you hike it to the 
@@ -99,7 +99,7 @@ export const dlcs = [
     {
         name: 'Hiking Simulator: Westworld',
 
-        img: './pictures/westworld.jpg',
+        img: '/pictures/westworld.jpg',
 
         description: `The robots from the Westworld amusement park have gained consciousness and have decided to eliminate all humans. 
         Pretend to be a robot until you can find a way to the North or South Pole, where the robots cannot attack due to their machanical 

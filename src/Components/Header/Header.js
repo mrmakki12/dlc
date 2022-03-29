@@ -6,8 +6,8 @@ export const Header = () => {
     return (
         <div className="container-fluid" data-testid="header">
             {/* Store header */}
-            <div className="d-flex justify-content-between">
-                <div>
+            <div className="d-flex justify-content-between align-items-center">
+                <div style={{ height: 'fitContent'}}>
                     <p>GameStation Store</p>
                 </div>
                 <Link to='/cart'>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
 
@@ -9,9 +10,11 @@ export const Header = () => {
                 <div>
                     <p>GameStation Store</p>
                 </div>
-                <div>
-                    <i className="fa-solid fa-cart-shopping"></i>
-                </div>
+                <Link to='/cart'>
+                    <div title="cart">
+                        <i className="fa-solid fa-cart-shopping"></i>
+                    </div>
+                </Link>
             </div>
             {/* Game header */}
             <div className=" text-white bg-dark row py-lg-4">

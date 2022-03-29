@@ -24,4 +24,4 @@ test('renders DLC completely', () => {
     const dlcs = screen.queryAllByText(/Hiking Simulator/i).length;
     expect(dlcs).toBe(9);
 });
-
+ 

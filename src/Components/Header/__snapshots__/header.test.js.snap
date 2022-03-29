@@ -13,11 +13,18 @@ exports[`matches snapshot 1`] = `
         GameStation Store
       </p>
     </div>
-    <div>
-      <i
-        className="fa-solid fa-cart-shopping"
-      />
-    </div>
+    <a
+      href="/cart"
+      onClick={[Function]}
+    >
+      <div
+        title="cart"
+      >
+        <i
+          className="fa-solid fa-cart-shopping"
+        />
+      </div>
+    </a>
   </div>
   <div
     className=" text-white bg-dark row py-lg-4"

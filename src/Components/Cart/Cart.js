@@ -3,6 +3,6 @@ import React from "react";
 export const Cart = () => {
 
     return (
-        <div></div>
+        <div data-testid='cart'>This is the cart for now</div>
     )
 }

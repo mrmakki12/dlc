@@ -4,6 +4,7 @@ exports[`matches snapshot 1`] = `
 <div
   className="col"
   data-testid="card"
+  onClick={[Function]}
 >
   <div
     className="card text-white bg-dark"
@@ -29,6 +30,14 @@ exports[`matches snapshot 1`] = `
         </p>
       </b>
     </div>
+    <button
+      class="btn btn-primary"
+      data-bs-target="#exampleModal"
+      data-bs-toggle="modal"
+      type="button"
+    >
+      More info
+    </button>
   </div>
 </div>
 `;

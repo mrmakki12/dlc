@@ -3,7 +3,8 @@ import { Card } from './Card.js';
 import { cleanup, render } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import renderer from 'react-test-renderer';
-
+import { Provider } from 'react-redux';
+import { store } from '../../App/store.js';
 
 afterEach(cleanup);
 
@@ -19,12 +20,16 @@ test("render Card without crashing", () => {
         price: `free 99`
     }
 
-    render(<Card data={data}/>);
+    render(
+        <Provider store={store}>
+            <Card data={data} />
+        </Provider>
+    );
 });
 
 // snapshot
 test("matches snapshot", () => {
-    
+
     // sample data
     const data = {
         name: 'Hiking Simulator: Jungle Adventure',
@@ -35,6 +40,10 @@ test("matches snapshot", () => {
         price: `free 99`
     }
 
-    const tree = renderer.create(<Card data={data}/>).toJSON();
+    const tree = renderer.create(
+        <Provider store={store}>
+            <Card data={data} />
+        </Provider>
+    ).toJSON();
     expect(tree).toMatchSnapshot();
 });

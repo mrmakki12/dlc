@@ -7,8 +7,8 @@ export const Header = () => {
         <div className="container-fluid" data-testid="header">
             {/* Store header */}
             <div className="d-flex justify-content-between align-items-center">
-                <div style={{ height: 'fitContent'}}>
-                    <p>GameStation Store</p>
+                <div className="d-flex align-items-center">
+                    <p className="align-self-center">GameStation Store</p>
                 </div>
                 <Link to='/cart'>
                     <div title="cart">
@@ -17,7 +17,7 @@ export const Header = () => {
                 </Link>
             </div>
             {/* Game header */}
-            <div className=" text-white bg-dark row py-lg-4">
+            <div className=" text-white bg-dark row py-lg-4 hike-sim-header">
                 {/* <img src="background.jpg" /> */}
                 <div className="">
                     <h1 className="">Hiking Simulator</h1>

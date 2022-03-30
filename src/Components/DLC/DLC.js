@@ -7,8 +7,8 @@ export const DLC = () => {
 
     return (
         <div data-testid='dlc'>
-            <div className="container-fluid g-3 bg-dark text-white">
-                <h3>Best Sellers</h3>
+            <div className="container-fluid g-3 bg-dark text-white py-5 ">
+                <h3 className="ps-5 offset-1">Best Sellers</h3>
             </div>
             <div className="album bg-dark text-white ">
                 <div className="container">

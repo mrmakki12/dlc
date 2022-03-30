@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  className="col"
+  data-testid="card"
+>
+  <div
+    className="card text-white bg-dark"
+  >
+    <img
+      className="card-img-top"
+      src="/pictures/background.jpg"
+    />
+    <div
+      className="card-body"
+    >
+      <h4
+        className="card-title"
+      >
+        Hiking Simulator: Jungle Adventure
+      </h4>
+      <b>
+        <p
+          className="card-text"
+        >
+          $
+          free 99
+        </p>
+      </b>
+    </div>
+  </div>
+</div>
+`;

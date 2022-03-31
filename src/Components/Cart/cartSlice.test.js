@@ -41,11 +41,20 @@ test("should be add same item to non-empty state causing quantity to increase by
     });
 });
 
-test("should be able to remove item from Cart", () => {
+test("should be able to remove item from Cart completely", () => {
     const previousState = {
         items: [{...sampleData(), quantity: 1}]
     };
     expect(cartSlice(previousState, removeFromCart(previousState.items[0]))).toEqual({
         items: []
+    });
+});
+
+test("should be able to remove 1 from item quantity already in Cart", () => {
+    const previousState = {
+        items: [{...sampleData(), quantity: 2}]
+    };
+    expect(cartSlice(previousState, removeFromCart(previousState.items[0]))).toEqual({
+        items: [{...sampleData(), quantity: 1}]
     });
 });

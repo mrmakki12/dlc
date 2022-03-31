@@ -25,12 +25,12 @@ const cartSlice = createSlice({
         // remove from cart
         removeFromCart: (state, action) => {
             // find item
-            const item = state.items.filter(dlc => {
+            const item = state.items.findIndex(dlc => {
                 return dlc.name === action.payload.name;
             });
-            // reduce quantity if > 0 else remove item
-            if(item?.quantity && item.quantity > 0) {
-                item.quantity--;
+            // reduce quantity if > 1 else remove item
+            if( state.items[item]?.quantity > 1) {
+                state.items[item].quantity--;
             } else {
                 state.items = state.items.filter(item => {
                     return item.name !== action.payload.name;

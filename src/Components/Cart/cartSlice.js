@@ -25,8 +25,8 @@ const cartSlice = createSlice({
         // remove from cart
         removeFromCart: (state, action) => {
             // find item
-            const item = state.items.find(dlc => {
-                dlc.name === action.payload.name;
+            const item = state.items.filter(dlc => {
+                return dlc.name === action.payload.name;
             });
             // reduce quantity if > 0 else remove item
             if(item?.quantity && item.quantity > 0) {

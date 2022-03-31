@@ -15,7 +15,7 @@ export const Cart = () => {
             {
                 cart && cart.map(item => {
                     return (
-                        <div>{item.name}: quantity: {item.quantity}</div>
+                        <CartItem data={item} />
                     )
                 })
             }

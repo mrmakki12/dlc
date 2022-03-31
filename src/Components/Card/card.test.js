@@ -1,12 +1,11 @@
 import React from "react";
 import { Card } from './Card.js';
-import { cleanup, fireEvent, render } from '@testing-library/react';
+import { cleanup, render } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import renderer from 'react-test-renderer';
 // redux
 import { Provider } from 'react-redux';
 import { store } from '../../App/store.js';
-import reducer from '../Cart/cartSlice'
 
 afterEach(cleanup);
 
@@ -40,23 +39,4 @@ test("matches snapshot", () => {
         </Provider>
     ).toJSON();
     expect(tree).toMatchSnapshot();
-});
-
-
-// add item to cart through user iteraction 
-test("add item to cart by user interaction", () => {
-
-    // render
-    render(
-        <Provider store={store}>
-            <Card data={sampleData()}/>
-        </Provider>
-    );
-
-    // click add to cart
-    fireEvent.click(document.getElementById('atc'));
-
-    // check if item is in cart
-    const previousState = [];
-    expect(reducer(undefined, {})).toBe([sampleData()]);
 });

@@ -22,13 +22,14 @@ const cartSlice = createSlice({
             }
         },
 
+        // remove from cart
         removeFromCart: (state, action) => {
             // find item
             const item = state.items.find(dlc => {
-                return dlc.name === action.payload.name;
+                dlc.name === action.payload.name;
             });
             // reduce quantity if > 0 else remove item
-            if(item.quantity > 0) {
+            if(item?.quantity && item.quantity > 0) {
                 item.quantity--;
             } else {
                 state.items = state.items.filter(item => {

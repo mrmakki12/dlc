@@ -11,7 +11,7 @@ export const Cart = () => {
     const cart = useSelector(selectCart);
 
     return (
-        <div data-testid='cart' className='container-fluid text-white bg-dark'> 
+        <div data-testid='cart' className='container-fluid text-white bg-dark' style={{height: '100vh'}}> 
             {
                 cart && cart.map(item => {
                     return (

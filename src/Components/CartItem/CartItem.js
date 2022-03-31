@@ -24,12 +24,12 @@ export const CartItem = (props) => {
     }
 
     return (
-        <div>
+        <div className="d-flex">
             <div>
                 <h2>{data.name}</h2>
                 <p>Quantity: {data.quantity}</p>
             </div>
-            <div>
+            <div className="d-flex flex-column">
                 <button onClick={(e) => handleRemoveFromCart(e)}>-</button>
                 <button onClick={(e) => handleAddToCart(e)}>+</button>
             </div>
